@@ -1,0 +1,93 @@
+$dark-blue: #282c34;
+
+h1 {
+  font-size: 80px;
+  margin: 0.5em 0;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 100;
+}
+
+.container {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  background-color: $dark-blue;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 4vmin);
+  color: white;
+}
+
+.search-options-container {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 50%;
+
+  > button {
+    font-size: 16px;
+    background-color: transparent;
+    color: #fff;
+    padding-right: 0;
+
+    &:hover {
+      text-decoration: underline;
+      background-image: none;
+    }
+  }
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 40px;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 100;
+  min-width: 50%;
+
+  > input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    flex: 1;
+  }
+
+  > button {
+    padding: 10px;
+    background-color: #fff;
+    color: $dark-blue;
+
+    &:hover {
+      background-color: #b5b5b5;
+    }
+  }
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.album-list {
+  min-width: 50%;
+}
+
+.album-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.album-info {
+  text-align: left;
+  > p {
+    margin: 0;
+    font-size: 16px;
+  }
+}
+
+.album-date {
+  font-size: 25px;
+}
